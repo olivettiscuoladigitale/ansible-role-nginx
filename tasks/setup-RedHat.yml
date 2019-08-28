@@ -12,3 +12,4 @@
   package:
     name: "{{ nginx_package_name }}"
     state: present
+  when: nginx_check_installed | bool
